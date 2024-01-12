@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title cs</title>
+    <link rel="stylesheet" href="cipher.css">
+    <script src="cipher.js"></script>
+       
+
+</head>
+<body>
+    
+    <div class="topsticky">
+        <div class="divhead">
+          <h1 class="h1 tophead"><div class="title">CYBER SECURITY INTERNSHIP</div></h1>
+        </div>
+    </div>
+
+    <br>
+
+    <h1 class="top">Message encryption and decryption using caesar cipher technique</h1>
+
+    <main class="mainbody">
+            
+         <!--Starting code of Front ent page of encryption  -->
+       
+         <div class="encrypt nav">
+           
+         <table border="3px" class="table">
+            <tr>
+                <th colspan="5" class="heading">message encryption</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="message" required ></td>
+                <td ><input type="number" id="key" required></td>
+            </tr>
+            <tr>
+                <td><label for="message"> enter message:</label></td>
+                <td><label for="key">enter key</label></td>
+            </tr>
+            <tr>
+                <th colspan="5"><button onclick="star_en()">Encrypt message:</button></th>
+            </tr>
+            <tr>
+                <th colspan="5"><p> <input type="text" id="en_message" disabled></p></th>
+            </tr>
+            <tr>
+                <th><span><button onclick="enc()" class="view">VIEW</button></span></th>
+                <th><span><button onclick="star_en()">HIDE</button></span></th>
+            </tr>
+         </table>
+        
+        </div>
+        <!--Ending code of Front ent page of encryption  -->
+
+        <!--Starting code of Front ent page of decryption  -->
+        <div class="decrypt nav">
+
+            
+         <table border="3px" class="table">
+            <tr>
+                <th colspan="5" class="heading">message decryption</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="cipher_message" required></td>
+                <td><input type="number" id="de_key" required></td>
+            </tr>
+            <tr>
+                <td><label for="cipher_message"> cipher message:</label></td>
+                <td><label for="de_key">enter key</label></td>
+            </tr>
+            <tr>
+                <th colspan="5"><button onclick="star_dec()">Decrypt message:</button></th>
+            </tr>
+            <tr>
+                <th colspan="5"><p> <input type="text" id="dec_message" disabled></p></th>
+            </tr>
+            <tr>
+                <th><span><button onclick="dec()">VIEW</button></span></th>
+                <th><span><button onclick="star_dec()">HIDE</button></span></th>
+            </tr>
+         </table>
+
+        </div>   
+        <!--Ending code of Front ent page of decryption  -->     
+    </main>
+
+    <hr>
+    <br>
+
+    <footer>
+        <nav class="icon ">
+            
+               <abbr title="facebook"><button class="facebook fa" id="face" onclick="contact(value)" value="https://www.facebook.com/tabrezzeta">f</button></abbr> 
+               
+               <abbr title="Linkdin"><button class="linkdin fa" id="linkdin" onclick="contact(value)" value="https://www.linkdin.com/in/tabrez-alam-59b6b61b3">in</button></abbr>
+              
+               <abbr title="google"><button class="google fa" id="google" onclick="contact(value)" value="#">g</button></abbr>
+               
+               <abbr title="gmail"><button class="gmail fa" id="gmail" onclick="contact(value)" value="https://mail.google.com/mail/mu/mp/561/#co">M</button></abbr>
+   
+        </nav>
+        <p class="copyright"><b>  Copyright &copy; 2023 Tabrez Alam  &reg; </b>
+        </p> 
+        <br>
+    </footer>
+
+</body>
+</html>
